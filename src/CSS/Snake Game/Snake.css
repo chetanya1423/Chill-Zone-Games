@@ -1,0 +1,61 @@
+
+.snakeGame {
+    /* background-color: #1e1e1e; */
+    background-image: url("../../Assets/Snake\ Game/WhatsApp\ Image\ 2024-04-02\ at\ 12.43.18\ PM.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-height: 80vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .game-area {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    border: 1px solid #dc042c;
+    border-radius: 10px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px #abbfc0;
+    background-image: url("../../Assets/Snake\ Game/Snake\ Bg\ Image\ 2.jpeg");
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .game-area {
+      position: relative;
+      width: 350px;
+      height: 300px;
+    }
+  
+    .snake {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  
+  .snake {
+    position: absolute;
+    width: 2%;
+    height: 2%;
+    background-color: #dc042c;
+    border: 1px solid white;
+    z-index: 2;
+  }
+  
+  .food {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 20px;
+    z-index: 1;
+  }

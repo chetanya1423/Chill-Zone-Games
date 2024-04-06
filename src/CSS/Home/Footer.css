@@ -1,0 +1,13 @@
+.triangle::before{
+    position: absolute;
+    content: "";
+    top: -14px;
+    left: 50%;
+    z-index: 100;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 14px solid rgb(75 85 99 / var(--tw-bg-opacity)); /* Change color as needed */
+  }

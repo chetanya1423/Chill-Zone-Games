@@ -1,0 +1,17 @@
+.rockPaperScissor{
+    background-image: url('../../Assets/Rock\ Paper\ Sicsor.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.seeAllBtn{
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 13px;
+    backdrop-filter: blur(10px);
+    max-width: max-content;
+    padding: 7px 22px;
+}
+.custom-date-input::-webkit-calendar-picker-indicator {
+   color: white;
+   background-color: rgb(232 125 14 / var(--tw-text-opacity));
+  }
