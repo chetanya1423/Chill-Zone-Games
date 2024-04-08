@@ -22,6 +22,7 @@ import { TicTacToe } from "./Pages/TicTacToe";
 import SnakeGame from "./Pages/Snake Game/SnakeGame";
 import { MyProfile } from "./Pages/MyProfile";
 import { ChangePassword } from "./Pages/ChangePassword";
+import { AllGameHistory } from "./Pages/Dashboard/AllGameHistory";
 
 
 
@@ -70,6 +71,7 @@ function App() {
           <Route path="/games" element={<Games />}></Route>
           <Route path="/contactUs" element={<ContactUs />}></Route>
           <Route path="/dashboard/myprofile/editProfile" element={<EditProfile />}></Route>
+          <Route path="/dashboard/gameHistoryName" element={<AllGameHistory />}></Route>
           <Route path="/dashboard/myprofile" element={<MyProfile />}></Route>
           <Route path="/dashboard" element={<Dashboard />}></Route>
           <Route path="/rock-paper-scissor" element={<RockPaperScissor />}></Route>

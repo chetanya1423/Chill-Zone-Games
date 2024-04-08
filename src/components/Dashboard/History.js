@@ -20,7 +20,7 @@ export const History = () => {
                 <div className='w-full flex flex-col items-center gap-[4rem]'>
                   {
                     allGamesHistory && allGamesHistory[0] &&
-                      <HistoryCard scoreImgs={rockPaperScissor}  history={allGamesHistory[0]}/>
+                      <HistoryCard scoreImgs={rockPaperScissor}  history={allGamesHistory[0]} />
                    
                   }
                    {

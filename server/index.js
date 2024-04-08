@@ -4,6 +4,7 @@ const app = express()
  const historyRoute = require("./routes/history")
  const profileRoute = require("./routes/profile")
  const database = require("./config/database")
+ const publicRoutes = require("./routes/publicRoute")
  const cookieParser = require("cookie-parser")
  const cors = require("cors")
  const dotenv = require("dotenv")
@@ -41,6 +42,7 @@ cloudinaryConnect();
 app.use("/api/v1/auth", userRoutes);
 app.use("/api/v1/history", historyRoute);
 app.use("/api/v1/profile", profileRoute);
+app.use("/api/v1/public", publicRoutes);
 // app.post("/api/v1/auth/sendotp",sendotp)
 
 app.get("/", (req,res)=>{

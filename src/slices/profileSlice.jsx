@@ -4,7 +4,8 @@ const initialState = {
   user: null,
   loading: false,
   userProfilePic:"",
-  allGamesHistory:null
+  allGamesHistory:null,
+  historyGameName:""
 
 }
 
@@ -27,6 +28,9 @@ const initialState = {
     setAllGamesHIstory(state, value) {
       state.allGamesHistory = value.payload
     },
+    setHistoryGameName(state, value){
+state.historyGameName = value.payload
+    },
     setUpdateData(state, value){
       if(value.payload.target.name === "dateOfBirth" || value.payload.target.name === "gender"){
         console.log("value.payload.target.value",value.payload.target.value)
@@ -47,6 +51,6 @@ const initialState = {
   },
 })
 
-export const { setUser, setLoading, setUpdateData,setUserProfilePic,setUserProfileGender,setAllGamesHIstory } = profileSlice.actions
+export const { setUser, setLoading, setUpdateData,setUserProfilePic,setUserProfileGender,setAllGamesHIstory,setHistoryGameName } = profileSlice.actions
 
 export default profileSlice.reducer

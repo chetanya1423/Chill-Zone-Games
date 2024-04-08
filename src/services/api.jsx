@@ -20,3 +20,8 @@ SENDAllGAMEHISTORY_API : BASE_URL + "/history/createAllGameHistory",
 GETALLGAMEHISTORY_API : BASE_URL + "/profile/getAllGamesHistoryDetails"
 
 }
+
+
+export const publicRouteEndPoint = {
+    CONTACTUS_API : BASE_URL + "/public/contactUs", 
+    }
