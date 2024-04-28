@@ -153,7 +153,7 @@ toast.error("Could not update profile.")
 
     return (
         <div className='w-full flex flex-col justify-center items-center'>
-            <div className='w-[500px] '>
+            <div className='sm:w-[500px] w-[95%] '>
                 <div className='flex flex-col  justify-end items-end h-[50px] '>
                     {
                         !isEditActive &&

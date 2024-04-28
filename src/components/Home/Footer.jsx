@@ -92,12 +92,12 @@ export const Footer = () => {
 
 
         <div className='w-full bg-white'>
-            <div className=' flex justify-between items-center px-[1rem] py-[3rem] gap-8'>
-                <div className=' flex flex-col gap-8 w-[80%] '>
+            <div className=' flex sm:flex-row flex-col justify-between items-center px-[1rem] py-[3rem] gap-8'>
+                <div className=' flex flex-col sm:justify-start justify-center sm:items-start items-center gap-8 w-[80%] '>
                     <img src={logo} className="w-[84px] text-black rounded-lg"/>
-                    <p className='text-black text-sm'>Crafted with creativity. For inquiries or collaborations,  <span className='text-darkYellow '><Link to="/contactUs">contact us</Link></span>. © 2024 Chill Zone Games. All rights reserved.</p>
+                    <p className='text-black text-sm sm:text-left text-center'>Crafted with creativity. For inquiries or collaborations,  <span className='text-darkYellow '><Link to="/contactUs">contact us</Link></span>. © 2024 Chill Zone Games. All rights reserved.</p>
                 </div>
-                <div className=' flex flex-col gap-4 w-[80%]'>
+                <div className=' flex flex-col sm:justify-start justify-center sm:items-start items-center gap-4 w-[80%]'>
                     <div>
                         <h4 className='text-black font-bold text-lg'>About Us</h4>
                     </div>
@@ -112,12 +112,12 @@ export const Footer = () => {
                        
                     </ul>
                 </div>
-                <div className='flex flex-col gap-4 w-[80%]'>
+                <div className='flex flex-col sm:justify-start justify-center sm:items-start items-center gap-4 w-[80%]'>
                     <div>
                         <h4 className='text-black font-bold text-lg'>Contact Us</h4>
                     </div>
                     <div className='flex flex-col gap-4'>
-                        <p className='text-black text-sm'>Discover Your Next Gaming Obsession at Chill Zone Games - Where Every Click Sparks Excitement!</p>
+                        <p className='text-black text-sm sm:text-left text-center'>Discover Your Next Gaming Obsession at Chill Zone Games - Where Every Click Sparks Excitement!</p>
                         {/* <p className='text-black text-sm'>+908 89097 890</p> */}
                     </div>
                 </div>

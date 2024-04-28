@@ -193,7 +193,7 @@ export const SignUp = () => {
                 } */}
                 <div className='body '>
 
-                    <div className='w-[500px] flex flex-col justify-center items-center mt-[2rem]'>
+                    <div className='sm:w-[500px] w-[90%] flex flex-col justify-center items-center mt-[2rem]'>
                         <div class="glass-panel ">
                             <div className='text-4xl text-darkYellow'>Sign Up</div>
                             <form onSubmit={(e) => submitHandler(e)}>

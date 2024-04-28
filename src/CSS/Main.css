@@ -22,3 +22,21 @@
 .bgColor{
     background: linear-gradient(90deg, #EF6CBE 0%, #5E71F2 100%)
 }
+.css-hip9hq-MuiPaper-root-MuiAppBar-root{
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 10px 0px;
+}
+/* .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:last-child{
+    color: #D80027 !important;
+} */
+@media(max-width:884px){
+    .eyeBol{
+        display: none;
+    }
+}
+@media(max-width:640px){
+    .gameLogo{
+        display: none;
+    }
+}

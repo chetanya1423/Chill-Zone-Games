@@ -168,7 +168,7 @@ export const Dashboard = () => {
                 </div>
                 {
                     userHistoryRockChart && <div className='w-full flex justify-center items-center mt-4'>
-                        <div className='w-[400px]'>
+                        <div className='sm:w-[400px] w-[300px]'>
                             <Pie
                                 data={userHistoryRockChart}
                             // options={options}

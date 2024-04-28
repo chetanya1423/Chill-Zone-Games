@@ -13,9 +13,9 @@ export const Score = () => {
 
         <div className='flex flex-col gap-[3rem]'>
             <div className='flex justify-between items-center'>
-                <div className='text-[25px] text-white font-bold'>Ready, Set, Play: Explore Our Epic Collection of Games!</div>
+                <div className='sm:text-[25px] text-lg text-white font-bold'>Ready, Set, Play: Explore Our Epic Collection of Games!</div>
                 <Link to="/games">
-                <div className='text-white  seeAllBtn'>See All</div>
+                <div className='text-white min-w-max text-sm  seeAllBtn'>See All</div>
                 </Link>
             </div>
             <div className='w-full flex justify-evenly gap-2'>
@@ -26,7 +26,7 @@ export const Score = () => {
 
             </div>
             <div className='w-[80%] mx-auto mt-[3rem]'>
-                <h1 className='text-[35px] font-bold text-center'>Where Every Click Creates Adventure: Chill Zone Games - Your Ultimate Playground !</h1>
+                <h1 className='sm:text-[35px] text-[25px] font-bold text-center'>Where Every Click Creates Adventure: Chill Zone Games - Your Ultimate Playground !</h1>
             </div>
         </div>
 

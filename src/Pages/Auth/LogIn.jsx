@@ -104,12 +104,12 @@ export const LogIn = () => {
 
                 <div className='body'>
 
-                    <div className='w-[500px] flex flex-col justify-center items-center'>
+                    <div className='sm:w-[500px] w-[95%] flex flex-col justify-center items-center'>
                         <div class="glass-panel ">
                             <div className='text-4xl text-darkYellow'>Log In</div>
                             <form className='w-full' onSubmit={(e) => submitHandler(e)}>
                                 <div className='flex flex-col gap-3  w-full justify-center items-center'>
-                                    <div className='w-[80%] flex flex-col justify-start items-start gap-2'>
+                                    <div className='sm:w-[80%] w-[95%] flex flex-col justify-start items-start gap-2'>
 
                                         <label htmlFor='email' className='text-darkYellow'>
                                             Email
@@ -124,7 +124,7 @@ export const LogIn = () => {
                                         />
                                     </div>
 
-                                    <div className='flex flex-col w-[80%] justify-start items-start gap-2'>
+                                    <div className='flex flex-col sm:w-[80%] w-[95%] justify-start items-start gap-2'>
                                         {/* <Box
                                 component="form"
                                 sx={{
@@ -149,7 +149,7 @@ export const LogIn = () => {
                                             required
                                         />
                                     </div>
-                                    <div className='flex justify-between w-[80%] mt-4 items-center'>
+                                    <div className='flex justify-between sm:w-[80%] w-[95%] mt-4 items-center'>
                                         <Link to="/forgot-password">
                                             <div className=' max-w-max cursor-pointer text-darkYellow'>Forgot Password</div>
                                         </Link>

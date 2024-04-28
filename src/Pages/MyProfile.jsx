@@ -34,38 +34,38 @@ export const MyProfile = () => {
                 <Navbar />
             </div>
             <div className='flex flex-col justify-center items-center h-full  min-h-[90vh]'>
-                <div className='w-[400px] bgColor relative rounded-lg'>
+                <div className='sm:w-[400px] w-[90%] bgColor relative rounded-lg'>
                     <div className='w-full flex flex-col gap-4 absolute top-[-5rem]'>
                         <div className='flex justify-center items-center '>
                             <img
-                                className='w-[10rem] rounded-full '
+                                className='sm:w-[10rem] w-[7rem] rounded-full '
                                 src={userProfilePic} />
                         </div>
                         <div className='flex flex-col justify-center items-center'>
-                            <h2 className=' text-3xl font-bold text-center'>{user?.firstName}{" "}{user?.lastName}</h2>
+                            <h2 className=' sm:text-3xl text-2xl font-bold text-center'>{user?.firstName}{" "}{user?.lastName}</h2>
                         </div>
                     </div>
-                    <div className='w-full mt-[9rem]'>
+                    <div className='w-full sm:mt-[9rem] mt-[5rem]'>
                         <Link to="/dashboard/myprofile/editProfile">
-                        <div className='flex justify-between items-center px-4 py-4 cursor-pointer'>
-                            <div className='flex justify-start items-center gap-1'>
-                                <FaEdit className=' text-xl' />
-                                <p className=' text-md font-bold'>Edit Profile</p>
+                            <div className='flex justify-between items-center px-4 py-4 cursor-pointer'>
+                                <div className='flex justify-start items-center gap-1'>
+                                    <FaEdit className=' text-xl' />
+                                    <p className=' sm:text-md text-sm font-bold'>Edit Profile</p>
+                                </div>
+                                <FaAngleRight className=" text-lg" />
                             </div>
-                            <FaAngleRight className=" text-lg" />
-                        </div>
                         </Link>
-                      
-<Link to="/myProfile/changePassword">
-<div className='flex justify-between items-center px-4 py-4 cursor-pointer'>
-                            <div className='flex justify-start items-center gap-1'>
-                                <RiLockPasswordLine className=' text-xl' />
-                                <p className=' text-md font-bold'>Change Password</p>
+
+                        <Link to="/myProfile/changePassword">
+                            <div className='flex justify-between items-center px-4 py-4 cursor-pointer'>
+                                <div className='flex justify-start items-center gap-1'>
+                                    <RiLockPasswordLine className=' text-xl' />
+                                    <p className=' sm:text-md text-sm  font-bold'>Change Password</p>
+                                </div>
+                                <FaAngleRight className=" text-lg" />
                             </div>
-                            <FaAngleRight className=" text-lg" />
-                        </div>
-</Link>
-                       
+                        </Link>
+
 
                         {/* <div className='flex justify-between items-center px-4 py-4'>
                     <div className='flex justify-start items-center gap-1'>
@@ -78,7 +78,7 @@ export const MyProfile = () => {
                         <div className='flex justify-between items-center px-4 py-4 mb-[1rem] cursor-pointer' onClick={() => signOutHandler()}>
                             <div className='flex justify-start items-center gap-1'>
                                 <FaEdit className='text-darkRed text-xl' />
-                                <p className='text-darkRed text-md font-bold'>Sign Out</p>
+                                <p className='text-darkRed sm:text-md text-sm font-bold'>Sign Out</p>
                             </div>
                             <GoSignOut className="text-darkRed text-lg" />
                         </div>

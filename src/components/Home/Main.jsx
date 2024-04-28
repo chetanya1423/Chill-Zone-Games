@@ -9,9 +9,9 @@ export const Main = ({ heading, paragraph }) => {
     return (
        
 
-        <div className=' min-h-[90vh] w-full  flex flex-col justify-center items-start relative'>
+        <div className=' min-h-[90vh]  w-full mb-4  flex lg:flex-col sm:flex-row flex-col-reverse  justify-center lg:items-start items-center relative'>
 
-            <div className='w-[40%] flex flex-col justify-between z-10 h-[300px]items-start gap-6'>
+            <div className='sm:w-[45%] w-full p-4 flex flex-col justify-between z-10 h-[300px]items-start gap-6'>
                 {/* {
                     location.pathname === "/" && <p className="text-darkYellow text-[20px] font-bold">Proved By prodesigner</p>
                 } */}
@@ -21,16 +21,19 @@ export const Main = ({ heading, paragraph }) => {
                     <p className='text-sm flex justify-start tracking-2 gap-1 items-center'>Home {">"} <span className='text-darkRed'>About Us</span></p>
                 }
 
-                <h1 className=' leading-[60px] font-bold text-[45px]'>{heading}</h1>
-                <p className='text-sm'>{paragraph}</p>
+                <h1 className=' leading-[40px] font-bold md:text-[45px] text-4xl sm:text-left text-center'>{heading}</h1>
+                <p className='md:text-sm text-[12px] sm:text-left text-center'>{paragraph}</p>
                <Link to="/games">
-               <button className=' max-w-max getInDetailBtn text-md py-2 px-3 rounded-full'>Get more details</button>
+                <div className='flex sm:justify-start sm:items-start justify-center items-center'>
+                    <button className=' max-w-max getInDetailBtn sm:text-md text-sm py-2 px-3 rounded-full '>Get more details</button>
+                    </div>
+               
                </Link>
             </div>
             {
-                location.pathname === "/" && <div className='w-[500px] absolute left-[20rem] top-[-1rem]'>
+                location.pathname === "/" && <div className='lg:w-[500px] sm:w-[50%] w-full lg:absolute left-[20rem] top-[-1rem] '>
                     <img src={pngImg} />
-                    <img src={eye} className='absolute left-[21rem] top-[6rem]' />
+                    {/* <img src={eye} className='absolute left-[21rem] top-[6rem] eyeBol' /> */}
                 </div>
             }
         </div>

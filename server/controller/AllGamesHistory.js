@@ -71,7 +71,6 @@ exports.createAllGamesHistory = async (req, res) => {
             message: "Score added.",
         })
 
-
     }
     catch (error) {
         console.log(error)

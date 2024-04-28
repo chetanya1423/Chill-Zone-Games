@@ -68,13 +68,13 @@ export const ChangePassword = () => {
 
                 <div className='body'>
 
-                    <div className='w-[500px] flex flex-col justify-center items-center'>
+                    <div className='sm:w-[500px] w-[95%] flex flex-col justify-center items-center'>
                         <div class="glass-panel flex flex-col gap-8">
-                            <div className='text-4xl text-darkYellow'>Reset Password</div>
+                            <div className='sm:text-4xl text-3xl text-darkYellow'>Reset Password</div>
                             <form className='w-full' onSubmit={(e) => submitHandler(e)}>
                                 <div className='flex flex-col gap-3  w-full justify-center items-center'>
 
-                                    <div className='flex flex-col w-[80%] justify-start items-start gap-2'>
+                                    <div className='flex flex-col sm:w-[80%] w-[95%] justify-start items-start gap-2'>
 
                                         <label htmlFor='password' className='text-darkYellow'>
                                             Old Password
@@ -89,7 +89,7 @@ export const ChangePassword = () => {
                                         />
                                     </div>
 
-                                    <div className='flex flex-col w-[80%] justify-start items-start gap-2'>
+                                    <div className='flex flex-col sm:w-[80%] w-[95%] justify-start items-start gap-2'>
 
                                         <label htmlFor='confirmPassword' className='text-darkYellow'>
                                             New Password
@@ -103,7 +103,7 @@ export const ChangePassword = () => {
                                             required
                                         />
                                     </div>
-                                    <div className='flex justify-end w-[80%] mt-4 items-center'>
+                                    <div className='flex justify-end sm:w-[80%] w-[95%] mt-4 items-center'>
 
 
                                         {

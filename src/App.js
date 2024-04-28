@@ -23,6 +23,7 @@ import SnakeGame from "./Pages/Snake Game/SnakeGame";
 import { MyProfile } from "./Pages/MyProfile";
 import { ChangePassword } from "./Pages/ChangePassword";
 import { AllGameHistory } from "./Pages/Dashboard/AllGameHistory";
+import FlappyBird from "./Pages/FlappyBird";
 
 
 
@@ -80,6 +81,7 @@ function App() {
           <Route path="/tic-tac-toe" element={<TicTacToe />}></Route>
           <Route path="/tic-tac-toe/playing" element={<TicTacToeStart />}></Route>
           <Route path="/snake" element={<SnakeGame />}></Route>
+          <Route path="/flappyBird" element={<FlappyBird />}></Route>
 
         </Routes>
 

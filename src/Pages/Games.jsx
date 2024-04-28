@@ -10,6 +10,7 @@ import rockPaperScissor from "../Videos/RockPaperScissorVideo.mp4"
 import rockPaperScissor_img from "../Assets/Rock Paper Scissor Game/Img/RockPaperScissor_game_img.jpeg"
 import ticTacToe_bg_img from "../Assets/Tic Tac Toe/ticTacToe_bg_img.jpeg"
 import snakeGame_bg_img from "../Assets/Snake Game/SnakeGame_bg_img.jpeg"
+import flappyBirdVideo from "../Videos/FlappyBirdVideo.mp4"
 
 export const Games = () => {
     return (
@@ -72,10 +73,10 @@ export const Games = () => {
                       gamePara2={"Challenge your friends, test your reflexes, and see if you can achieve the highest score. Click below to start playing now and unleash the thrill of Snake!"}
                     />
                 </div>
-                {/* <div>
+               <div>
                     <AllGames 
                     direction={"right"} 
-                    video={ticTacToeVideo}
+                    video={flappyBirdVideo}
                     videoHad={""}
                     videoPara={""}
                     point1={""}
@@ -87,7 +88,7 @@ export const Games = () => {
                     gamePara2={""}
                     />
                 </div>
-                <div>
+                {/*  <div>
                     <AllGames 
                     direction={"left"} 
                     video={ticTacToeVideo}

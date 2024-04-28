@@ -13,6 +13,7 @@ export const TicTacToe = () => {
 
     const navigate = useNavigate();
 
+    
     useEffect(() => {
         if (!token) {
             navigate("/login")

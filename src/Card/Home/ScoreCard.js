@@ -13,7 +13,7 @@ export const ScoreCard = ({ scoreImgs, gameName,link }) => {
         className='rounded-xl'
         />
       </div>
-      <p className='flex justify-center items-center gap-2 text-center text-xl'><span><FaFire/></span>{gameName}</p>
+      <p className='flex justify-center items-center sm:gap-2 gap-1 text-center sm:text-xl text-md'><span><FaFire/></span>{gameName}</p>
     </div>
    </Link>
 

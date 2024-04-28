@@ -81,7 +81,7 @@ console.log(error)
             <h1 className='text-3xl text-center text-black'>Hii Gamers</h1>
             <p className='text-sm text-center text-black'>Need Assistance? Contact Chill Zone Games Today.</p>
             <form className='flex justify-center items-center' onSubmit={submitHandler}>
-                <div className='flex flex-col gap-3  w-[500px] justify-center items-center mt-[2rem] '>
+                <div className='flex flex-col gap-3  sm:w-[500px] w-[95%] justify-center items-center mt-[2rem] '>
                     <div className='flex w-full gap-2 justify-center items-center'>
                         <div className='flex flex-col w-full justify-start items-start gap-1'>
                             <label htmlFor='firstName' className='text-black'>First Name</label>
@@ -125,7 +125,6 @@ console.log(error)
                             disabled={formData?.email}
                             value={user ? formData?.email : publicFormData?.email}
                             className='px-2 w-full bg-black  text-white border rounded-xl py-2 border-black outline-none'
-
                         />
                     </div>
                     <div className='flex flex-col w-full  justify-start items-start gap-1'>
