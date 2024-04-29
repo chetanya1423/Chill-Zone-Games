@@ -1,1 +1,1 @@
-# Live Link :- chill-zone-games.vercel.app
+# Live Link :- http://chill-zone-games.vercel.app
