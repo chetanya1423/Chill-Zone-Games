@@ -19,6 +19,7 @@ export const Dashboard = () => {
     const [userHistoryRockChart, setUserHistoryRockChart] = useState(null)
     const [userHistoryRockChart1, setUserHistoryRockChart1] = useState(null)
     const [userHistoryRockChart2, setUserHistoryRockChart2] = useState(null)
+    const [userHistoryRockChart3, setUserHistoryRockChart3] = useState(null)
     // const [userHistoryRockChart, setUserHistoryRockChart] = useState(null)
     // const [userHistoryRockChart, setUserHistoryRockChart] = useState(null)
   
@@ -75,8 +76,16 @@ export const Dashboard = () => {
                 labels: response.data.data[2].scores.map((data) => data.firstPlayerScore),
                 datasets: [{
                     label: `${response.data.data[2].game} Game Score Chart`,
-                    data: response.data.data[1].scores.map((data) => data.firstPlayerScore),
+                    data: response.data.data[2].scores.map((data) => data.firstPlayerScore),
                     backgroundColor: generateRandomColors(response.data.data[2].scores.length),
+                }]
+            })
+            setUserHistoryRockChart3({
+                labels: response.data.data[3].scores.map((data) => data.firstPlayerScore),
+                datasets: [{
+                    label: `${response.data.data[3].game} Game Score Chart`,
+                    data: response.data.data[3].scores.map((data) => data.firstPlayerScore),
+                    backgroundColor: generateRandomColors(response.data.data[3].scores.length),
                 }]
             })
     
@@ -179,7 +188,7 @@ export const Dashboard = () => {
                 }
                  {
                     userHistoryRockChart1 && <div className='w-full flex justify-center items-center mt-8'>
-                        <div className='w-[400px]'>
+                        <div className='sm:w-[400px] w-[300px]'>
                             <Pie
                                 data={userHistoryRockChart1}
                             // options={options}
@@ -190,9 +199,20 @@ export const Dashboard = () => {
                 }
                  {
                     userHistoryRockChart2 && <div className='w-full flex justify-center items-center mt-8'>
-                        <div className='w-[400px]'>
+                        <div className='sm:w-[400px] w-[300px]'>
                             <Pie
                                 data={userHistoryRockChart2}
+                            // options={options}
+                            />
+                        </div>
+
+                    </div>
+                }
+                 {
+                    userHistoryRockChart3 && <div className='w-full flex justify-center items-center mt-8'>
+                        <div className='sm:w-[400px] w-[300px]'>
+                            <Pie
+                                data={userHistoryRockChart3}
                             // options={options}
                             />
                         </div>
@@ -210,3 +230,4 @@ export const Dashboard = () => {
         </div>
     )
 }
+

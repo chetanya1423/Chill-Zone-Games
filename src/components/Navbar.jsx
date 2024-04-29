@@ -158,7 +158,7 @@ export const Navbar = () => {
 
       </div>
 
-      <div className="md:hidden">
+      <div className="md:hidden mobile_navbar">
         <AppBar position="static">
           <Container maxWidth="xl">
             <Toolbar disableGutters>
